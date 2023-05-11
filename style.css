@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#loadingScreen {
+  z-index: 100;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  pointer-events: none;
+}
+.loadingScreenHidden {
+  animation: fade 1s;
+  opacity: 0;
+  pointer-events: none;
+}
+@keyframes fade {
+  0% {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  user-select: none;
+  color: white;
+  font-family: 'Bebas Neue', sans-serif;
+  scroll-behavior: smooth;
+  /* Make it Capitalized for Offline user maby? and also color stuff with a default */
+}
+
+body {
+  background-color: black;
+  overflow-x: hidden;
+}
+
+#start {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+}
+
+#downloads {
+  position: absolute;
+  top: 200vh;
+  width: 100vw;
+  height: 100vh;
+}
+#downloads div {
+  margin-top: 100px;
+}
+
+#axotris {
+  position: absolute;
+  top: 100vh;
+  width: 100vw;
+  height: 100vh;
+}
+
+footer {
+  position: absolute;
+  top: 300vh;
+  width: 100vw;
+  height: 100vh;
+}
+
+#copyright {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  font-size: 17px;
+  margin: 0;
+}
+
+h1 {
+  font-size: 20vw;
+  font-weight: bold;
+  text-shadow: 
+    2px 2px 0px black, 
+    -2px 2px 0px black, 
+    2px -2px 0px black, 
+    -2px -2px 0px black;
+}
+
+h2 {
+  text-align: center;
+  color: black;
+}
+
+h3 {
+  font-size: 100px;
+}
+
+button {
+  font-size: 3vw;
+  text-decoration: none;
+  border: 2px solid white;
+  background-color: transparent;
+  padding: 5px 10px;
+  margin: 40px;
+  pointer-events: all;
+  transition: all 0.3s;
+}
+button:hover {
+  scale: 1.1;
+}
+
+p {
+  font-size: 30px;
+  margin: 100px;
+}
+
+a {
+  text-decoration: none;
+}
